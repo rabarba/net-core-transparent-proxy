@@ -3,11 +3,12 @@ using transparentProxy.ProductService.Models;
 
 namespace transparentProxy.ProductService.Services.Impl
 {
-    public class ProductService : IProductService
+    public class ProductManager : IProductService
     {
-        public void AddProduct(ProductItemDto productItem)
+        public bool AddProduct(ProductItemDto productItem)
         {
-            throw new System.NotImplementedException();
+            // to do stuff ...
+            return true;
         }
 
         public List<ProductItemDto> GetProductList()

@@ -6,6 +6,6 @@ namespace transparentProxy.ProductService.Services
     public interface IProductService
     {
         List<ProductItemDto> GetProductList();
-        void AddProduct(ProductItemDto productItem);
+        bool AddProduct(ProductItemDto productItem);
     }
 }

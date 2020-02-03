@@ -107,3 +107,4 @@ C:\Users\dtukap\Source\Repos\net-core-transparent-proxy\src\transparentProxy.Pro
 C:\Users\dtukap\Source\Repos\net-core-transparent-proxy\src\transparentProxy.ProductService\bin\Debug\netcoreapp3.0\transparentProxy.ProductService.pdb
 C:\Users\dtukap\Source\Repos\net-core-transparent-proxy\src\transparentProxy.ProductService\obj\Debug\netcoreapp3.0\transparentProxy.ProductService.dll
 C:\Users\dtukap\Source\Repos\net-core-transparent-proxy\src\transparentProxy.ProductService\obj\Debug\netcoreapp3.0\transparentProxy.ProductService.pdb
+C:\Users\dtukap\Source\Repos\net-core-transparent-proxy\src\transparentProxy.ProductService\obj\Debug\netcoreapp3.0\transparentProxy.ProductService.MvcApplicationPartsAssemblyInfo.cache
