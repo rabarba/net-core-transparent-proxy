@@ -17,20 +17,19 @@ namespace transparentProxy.ProductService.Controllers
             _memoryCache = memoryCache;
         }
 
-
         [HttpPost]
         public IActionResult Post([FromBody]ProductItemDto productItemDto)
         {
-            var productService = TransparentProxy<IProductService>.Create(new ProductManager());
-            var result = productService.AddProduct(productItemDto);
+            var productService = TransparentProxy<IProductService>.Create(new ProductManager(_memoryCache), _memoryCache);
+            productService.AddProduct(productItemDto);
 
-            return Created(string.Empty, result);
+            return Created(string.Empty, productItemDto);
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var productService = TransparentProxy<IProductService>.Create(new ProductManager(), _memoryCache);
+            var productService = TransparentProxy<IProductService>.Create(new ProductManager(_memoryCache), _memoryCache);
             var result = productService.GetProductList();
 
             return Ok(result);

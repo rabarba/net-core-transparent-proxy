@@ -13,14 +13,6 @@ namespace transparentProxy.ProductService.CrossCuttingConcerns
             throw new System.NotImplementedException();
         }
 
-        public static T Create(T decorated)
-        {
-            object proxy = Create<T, TransparentProxy<T>>();
-            ((TransparentProxy<T>)proxy).SetParameters(decorated, null);
-
-            return (T)proxy;
-        }
-
         public static T Create(T decorated, IMemoryCache memoryCache)
         {
             object proxy = Create<T, TransparentProxy<T>>();
