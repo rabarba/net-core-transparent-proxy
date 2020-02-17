@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/transparentProxy.ProductService/.vs/transparentProxy.ProductService/v16/Server/sqlite3
