@@ -23,7 +23,7 @@ namespace transparentProxy.ProductService.Controllers
             var productService = TransparentProxy<IProductService>.Create(new ProductManager(_memoryCache), _memoryCache);
             productService.AddProduct(productItemDto);
 
-            return Created(string.Empty, productItemDto);
+            return Created(string.Empty, true);
         }
 
         [HttpGet]
